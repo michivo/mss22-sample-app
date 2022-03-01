@@ -1,0 +1,25 @@
+name: flutter_articles
+description: A new Flutter project.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^8.0.2
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^9.0.2
+  mocktail: ^0.2.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

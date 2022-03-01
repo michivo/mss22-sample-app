@@ -1,2 +1,3 @@
-# sample_app
-Sample Flutter App
+# Sample App
+
+A small sample Flutter App.

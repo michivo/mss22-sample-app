@@ -1,0 +1,15 @@
+{
+    "search.exclude": {
+        "**/.dart_tool": true,
+        "**/.vscode": true,
+        "**/build": true,
+        "**/linux": true,
+        "**/macos": true,
+        "**/test_drivers": true,
+        "**/web": true,
+        "**/window": true
+    },
+    "files.exclude": {
+        "**/.packages": true
+    }
+}
