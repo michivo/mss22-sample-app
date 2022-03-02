@@ -5,7 +5,7 @@ class ArticleInfo extends Equatable {
 
   ArticleInfo.fromJson(Map<String, dynamic> json)
       : name = json['name'] as String,
-        description = json['email'] as String;
+        description = json['description'] as String;
 
   Map<String, dynamic> toJson() =>
       <String, dynamic>{'name': name, 'description': description};

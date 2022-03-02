@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../articles.dart';
+import '../repo/api_article_info_repo.dart';
 import 'article_number_view.dart';
 
 /// {@template counter_view}
@@ -24,8 +25,7 @@ class _ArticleInfoViewState extends State<ArticleInfoView> {
             BlocProvider<ArticleNumberValidationCubit>(
                 create: (context) => ArticleNumberValidationCubit()),
             BlocProvider<ArticleInfoCubit>(
-                create: (context) =>
-                    ArticleInfoCubit(InMemoryArticleInfoRepo())),
+                create: (context) => ArticleInfoCubit(ApiArticleInfoRepo())),
           ],
           child: Container(
               margin: const EdgeInsets.all(10),
