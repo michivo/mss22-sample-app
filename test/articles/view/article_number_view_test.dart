@@ -1,7 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_articles/articles/articles.dart';
-import 'package:flutter_articles/articles/view/article_info_view.dart';
 import 'package:flutter_articles/articles/view/article_number_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';

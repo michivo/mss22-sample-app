@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter_articles/app.dart';
-import 'package:flutter_articles/articles/articles.dart';
+import 'package:flutter_articles/articles/view/article_info_view.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -11,12 +11,12 @@ void main() {
     });
 
     testWidgets('home is ArticleInfoPage', (tester) async {
-      expect(ArticlesApp().home, isA<ArticleInfoPage>());
+      expect(ArticlesApp().home, isA<ArticleInfoView>());
     });
 
     testWidgets('renders ArticleInfoPage', (tester) async {
       await tester.pumpWidget(ArticlesApp());
-      expect(find.byType(ArticleInfoPage), findsOneWidget);
+      expect(find.byType(ArticleInfoView), findsOneWidget);
     });
   });
 }

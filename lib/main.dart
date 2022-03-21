@@ -6,7 +6,7 @@ import 'article_cubit_observer.dart';
 
 void main() {
   BlocOverrides.runZoned(
-    () => runApp(const ArticlesApp()),
+    () => runApp(ArticlesApp()),
     blocObserver: ArticleCubitObserver(),
   );
 }
