@@ -14,9 +14,6 @@ class ArticleInfoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => ArticleNumberValidationCubit(),
-      child: ArticleInfoView(),
-    );
+    return ArticleInfoView();
   }
 }
