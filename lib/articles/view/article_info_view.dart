@@ -7,7 +7,8 @@ import 'article_number_view.dart';
 
 /// {@template counter_view}
 /// A [StatefulWidget] which reacts to the provided
-/// [ArticleNumberValidationCubit] state and notifies it in response to user input.
+/// [ArticleNumberValidationCubit] state and notifies it in response to user
+/// input.
 /// {@endtemplate}
 class ArticleInfoView extends StatefulWidget {
   @override

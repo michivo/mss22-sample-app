@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_counter/main.dart' as app;
+import 'package:flutter_articles/main.dart' as app;
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
