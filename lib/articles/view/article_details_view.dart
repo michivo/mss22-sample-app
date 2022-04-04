@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../articles.dart';
 
 /// {@template counter_view}
@@ -19,9 +19,9 @@ class ArticleDetailsView extends StatelessWidget {
           builder: (context, state) {
             switch (state.state) {
               case ArticleLoadingState.idle:
-                return const Text(
-                  'No article data to show',
-                  style: TextStyle(fontSize: 20),
+                return Text(
+                  AppLocalizations.of(context)!.emptyData,
+                  style: const TextStyle(fontSize: 20),
                 );
               case ArticleLoadingState.loading:
                 return const CircularProgressIndicator();
@@ -31,9 +31,9 @@ class ArticleDetailsView extends StatelessWidget {
                   style: const TextStyle(fontSize: 20),
                 );
               case ArticleLoadingState.notFound:
-                return const Text(
-                  'No article could be found.',
-                  style: TextStyle(fontSize: 20),
+                return Text(
+                  AppLocalizations.of(context)!.emptyData,
+                  style: const TextStyle(fontSize: 20),
                 );
             }
           },
