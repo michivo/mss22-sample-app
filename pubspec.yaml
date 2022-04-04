@@ -17,10 +17,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_localizations: 
+    sdk: flutter 
+  intl: any
+  provider: ^6.0.0
   bloc_test: ^9.0.2
   mocktail: ^0.2.0
   integration_test:
     sdk: flutter
 
 flutter:
+  generate : true
   uses-material-design: true
